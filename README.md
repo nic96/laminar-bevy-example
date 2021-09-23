@@ -1,6 +1,6 @@
 # laminar-bevy-example
 An example of using the laminar rust crate in bevy.
-Was the client is started you can just type and press enter to send a message to the server.
+Once the client is started you can just type and press enter to send a message to the server.
 The server will then broadcast the message to all clients.
 
 ### Running
