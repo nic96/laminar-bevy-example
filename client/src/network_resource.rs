@@ -13,7 +13,9 @@ pub struct NetworkResource {
 
 impl FromWorld for NetworkResource {
     fn from_world(world: &mut World) -> Self {
-        let mut socket = Socket::bind_any().expect("failed to bind socket");
+        let mut socket = Socket::bind("0.0.0.0:0").expect("failed to bind socket");
+
+        println!("client start on: {}", socket.local_addr().unwrap());
 
         let (sender, receiver) = (socket.get_packet_sender(), socket.get_event_receiver());
 
