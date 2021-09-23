@@ -1,0 +1,6 @@
+/.idea
+/.cargo
+/**/**/target/
+/.history/
+rust-toolchain
+/target
